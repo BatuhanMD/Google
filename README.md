@@ -34,10 +34,3 @@ Bu projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımlar�
 
 Proje dosyalarını açtıktan sonra, `index.html` dosyasını bir web tarayıcısında açarak sayfayı görüntüleyebilirsiniz. Arama çubuğuna bir terim girip "Google Search" butonuna tıklayarak Google'da arama yapabilir veya "I'm Feeling Lucky" butonuna tıklayarak şanslı hissedebilirsiniz.
 
-## Dosya Yapısı
-
-```plaintext
-google-homepage-clone/
-├── index.html
-├── style.css
-└── README.md
