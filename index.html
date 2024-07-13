@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Home Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans+HK' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <a href="" class="navtext">Gmail</a>
+      <a href="" class="navtext">Images</a>
+      <span class="material-icons apps">apps</span>
+      <img src="avatar.png" alt="" class="avatar">
+    </nav>
+    <div class="main">
+      <div class="">
+        <img src="googlelogoreal.png" alt="" class="google">
+      </div>
+      <div class="searchb">
+        <span class="material-icons searchicon">search</span>
+        <form id="searchForm" action="https://www.google.com/search" method="GET">
+          <input type="text" id="searchBox" name="q" placeholder="Search Google or type a URL" required>
+        </form>
+        <img src="miclogo.png" alt="" class="mic">
+      </div>
+      <div class="sbutton">
+        <input type="submit" form="searchForm" value="Google Search">
+        <input type="button" id="feelingLuckyButton" value="I'm Feeling Lucky">
+      </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-left">
+            <p>Türkiye</p>
+          </div>
+          <div class="footer-center">
+            <a href="#">Hakkında</a>
+            <a href="#">Reklam</a>
+            <a href="#">İşletme</a>
+            <a href="#">Arama nasıl çalışır?</a>
+          </div>
+          <div class="footer-right">
+            <a href="#">Gizlilik</a>
+            <a href="#">Şartlar</a>
+            <a href="#">Ayarlar</a>
+          </div>
+        </div>
+      </footer>
+      
+    <script>
+      document.getElementById('feelingLuckyButton').addEventListener('click', function() {
+        var query = document.getElementById('searchBox').value;
+        if (query !== "") {
+          var luckyUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query) + '&btnI=I';
+          window.location.href = luckyUrl;
+        } else {
+          alert("Please enter a search term.");
+        }
+      });
+    </script>
+  </body>
+</html>
